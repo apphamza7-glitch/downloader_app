@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Media Downloader</h1>
+        <p>Jib link mn YouTube, TikTok, Insta wla Facebook.</p>
+        
+        <form id="download-form">
+            <input type="url" id="url" placeholder="7et l'Link hna..." required>
+            
+            <select id="format">
+                <option value="mp4">Video (MP4)</option>
+                <option value="mp3">Audio (MP3)</option>
+            </select>
+            
+            <button type="submit" id="download-btn">Download</button>
+        </form>
+
+        <p id="status" class="status-msg"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
